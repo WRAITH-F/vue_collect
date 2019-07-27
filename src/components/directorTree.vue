@@ -236,16 +236,8 @@
         // 数据初始化
         _this
           .$http({
-            url: "http://10.168.1.161:8088/orgs/tree/",
+            url: "http://zhouxunwang.cn/api_a.php?id=104",
             method: "get",
-            headers: {
-              token: ""
-            },
-            params: {
-              relativeDepth: 3,
-              id: 4,
-              searchKey: "组"
-            }
           })
           .then(res => {
             //员工的数据
