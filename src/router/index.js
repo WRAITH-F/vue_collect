@@ -1,15 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import directorTree from '@/components/directorTree'
+import directorTree from '@/pages/directorTree'
+import calendarSelect from '@/pages/calendarSelect'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
+  mode: 'history', //去掉路径中的#号
+  routes: [{
+      path: "/",
+      name: "directorTree",
+      redirect: "directorTree",
+      component: directorTree,
+      //路由重定向
+    },
     {
-      path: '/',
+      path: '/directorTree',
       name: 'directorTree',
-      component: directorTree
+      component: directorTree,
+    },
+    {
+      path: '/calendarSelect',
+      name: 'calendarSelect',
+      component: calendarSelect
     }
   ]
 })

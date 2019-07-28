@@ -5,11 +5,13 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueTree from './components/directorTree/index.js'
+import calendar from './components/calendar/index.js'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 Vue.use(VueTree)
+Vue.use(calendar)
 
 
 /* eslint-disable no-new */

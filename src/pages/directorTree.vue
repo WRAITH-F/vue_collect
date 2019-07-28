@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="lead">vue-tree 示例 <a href="https://github.com/jiaxincui/vue-tree">github</a></p>
+          <!-- <p class="lead">vue-tree 示例 <a href="https://github.com/jiaxincui/vue-tree">github</a></p> -->
         </div>
         <div class="col-md-6">
           <vue-tree :tree-data="treeData" v-model="ids" :options="options" @handle="handle" />
@@ -221,34 +221,22 @@
         }, ]
       }
     },
-    mounted() {
-      this.getManagetree()
-      // console.log(this.options)
-    },
     methods: {
       ///节点点击事件
       handle(item) {
         this.message.push(`节点 ${JSON.stringify(item)} 作为事件参数传递`)
-      },
-      //获取树状图数据
-      getManagetree() {
-        let _this = this;
-        // 数据初始化
-        _this
-          .$http({
-            url: "http://zhouxunwang.cn/api_a.php?id=104",
-            method: "get",
-          })
-          .then(res => {
-            //员工的数据
-            _this.treeData = res.data;
-            _this.options.title = res.data.title
-            // console.log(_this.treeData);
-          })
-          .catch(error => {
-            console.log(error);
-          });
       }
     }
   }
 </script>
+
+<style scoped="scoped">
+  #HelloWorld{
+    width: 100%;
+    overflow: hidden;
+    padding: 32px 0;
+  }
+  .col-md-6{
+    width: 42%;
+  }
+</style>

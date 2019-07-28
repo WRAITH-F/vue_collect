@@ -1,14 +1,11 @@
-<strong></strong><template>
-  <div id="app">
+<template>
+  <div class="index">
     <ul class="index-box">
       <li class="index-left-menu" :style="{height:fullHeight + 'px'}">
         <div class="index-menu-name" v-for="(ml,index) in menuList" @click="switchMenu(index)">{{ml.name}}</div>
       </li>
       <li class="index-right-content" :style="{height:fullHeight + 'px'}">
-        <div class="index-right-content-title">{{menuTitle}}</div>
-        <div :style="{height:fullHeight + '-46px'}">
-          <router-view></router-view>
-        </div>
+        <router-view></router-view>
       </li>
     </ul>
   </div>
@@ -16,10 +13,8 @@
 
 <script>
   export default {
-    name: 'App',
     data() {
       return {
-        menuTitle:'',
         fullHeight: document.documentElement.clientHeight,
         menuList: [{
             name: "无限级目录树",
@@ -27,7 +22,7 @@
           },
           {
             name: "日期选择器",
-            path: "/calendarSelect"
+            path: "/calendar"
           },
         ]
       }
@@ -45,13 +40,9 @@
     methods: {
       switchMenu(ind) {
         var _this = this
-        // 标题
-        _this.menuTitle = _this.menuList[ind].name
-        // 路由跳转
         _this.$router.push({
-          path: _this.menuList[ind].path
+          url: _this.menuList[ind].path
         })
-        // 选中样式变化
         for (var i in this.menuList) {
           var menuStyle = document.getElementsByClassName("index-menu-name")[i]
           menuStyle.style.transitionDuration = ".25s"
@@ -83,14 +74,6 @@
 </script>
 
 <style>
-  body,ul,li,div{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    -webkit-user-select: none;
-    outline: none;
-  }
   .index-box {
     width: 100%;
     overflow: hidden;
@@ -107,24 +90,13 @@
     cursor: pointer;
     text-align: center;
     width: 100%;
-    height: 42px;
-    line-height: 42px;
+    overflow: hidden;
+    padding: 12px 0;
   }
 
   .index-right-content {
     float: left;
     width: 82%;
     overflow-y: auto;
-  }
-  .index-right-content-title{
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-    height: 42px;
-    line-height: 42px;
-    padding: 0 0 0 16px;
-    font-size: 18px;
-    color: rgb(126, 192, 238);
-    background: #F0F0F0;
   }
 </style>
