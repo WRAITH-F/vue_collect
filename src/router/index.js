@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import directorTree from '@/pages/directorTree'
 import calendarSelect from '@/pages/calendarSelect'
+import vuePagination from '@/pages/vuePagination'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/calendarSelect',
       name: 'calendarSelect',
       component: calendarSelect
+    },
+     {
+      path: '/vuePagination',
+      name: 'vuePagination',
+      component: vuePagination
     }
   ]
 })

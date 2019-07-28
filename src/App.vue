@@ -6,7 +6,7 @@
       </li>
       <li class="index-right-content" :style="{height:fullHeight + 'px'}">
         <div class="index-right-content-title">{{menuTitle}}</div>
-        <div :style="{height:fullHeight + '-46px'}">
+        <div :style="{height:fullHeight + '-46px'}" class="index-right-content-content">
           <router-view></router-view>
         </div>
       </li>
@@ -28,6 +28,10 @@
           {
             name: "日期选择器",
             path: "/calendarSelect"
+          },
+          {
+            name: "翻页组件",
+            path: "/vuePagination"
           },
         ]
       }
@@ -83,7 +87,7 @@
 </script>
 
 <style>
-  body,ul,li,div{
+  body,ul,li,div,p{
     margin: 0;
     padding: 0;
     text-decoration: none;

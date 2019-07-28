@@ -6,12 +6,14 @@ import router from './router'
 import axios from 'axios'
 import VueTree from './components/directorTree/index.js'
 import calendar from './components/calendar/index.js'
+import pagination from './components/vuePagination/index.js'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 Vue.use(VueTree)
 Vue.use(calendar)
+Vue.use(pagination)
 
 
 /* eslint-disable no-new */
