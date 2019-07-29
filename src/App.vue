@@ -65,7 +65,7 @@
           }
           if (i != ind) {
             menuStyle.style.color = "#333333";
-            menuStyle.style.background = "#F0FFF0"
+            menuStyle.style.background = "#f8fbf8"
           }
         }
       }
@@ -104,7 +104,7 @@
     float: left;
     width: 18%;
     overflow-y: auto;
-    background: #F0FFF0;
+    background: #f8fbf8;
   }
 
   .index-menu-name {
@@ -129,6 +129,6 @@
     padding: 0 0 0 16px;
     font-size: 18px;
     color: rgb(126, 192, 238);
-    background: #F0F0F0;
+    background: #f6f6f6;
   }
 </style>
