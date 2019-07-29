@@ -29,10 +29,10 @@
       <!-- 日期选择器1 -->
       <li class="calendar-select-calendar">
         <span class="calendar-select-title">单选/返回选择的值/事件</span>
-        <vue-calendar ref="calendar1" :events="calendar1.events" :lunar="calendar1.lunar" :value="calendar1.value"
-          :begin="calendar1.begin" :end="calendar1.end" :weeks="calendar1.weeks" :months="calendar1.months" @select="calendar1.select"
-          @selectMonth="calendar1.selectMonth" @selectYear="calendar1.selectYear">
-        </vue-calendar>
+          <vue-calendar ref="calendar1" :events="calendar1.events" :lunar="calendar1.lunar" :value="calendar1.value"
+            :begin="calendar1.begin" :end="calendar1.end" :weeks="calendar1.weeks" :months="calendar1.months" @select="calendar1.select"
+            @selectMonth="calendar1.selectMonth" @selectYear="calendar1.selectYear">
+          </vue-calendar>
         <div class="calendar-select-btn">
           <button @click="changeEvents">异步更新Price</button>
           <!-- <button @click="calendar1.value=[2018,1,Math.floor(Math.random()*30+1)]">动态设置日期</button> -->

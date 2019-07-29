@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import directorTree from '@/pages/directorTree'
 import calendarSelect from '@/pages/calendarSelect'
 import vuePagination from '@/pages/vuePagination'
+import imageUploader from '@/pages/imageUploader'
 
 Vue.use(Router)
 
@@ -25,10 +26,15 @@ export default new Router({
       name: 'calendarSelect',
       component: calendarSelect
     },
-     {
+    {
       path: '/vuePagination',
       name: 'vuePagination',
       component: vuePagination
+    },
+    {
+      path: '/imageUploader',
+      name: 'imageUploader',
+      component: imageUploader
     }
   ]
 })

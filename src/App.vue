@@ -19,7 +19,7 @@
     name: 'App',
     data() {
       return {
-        menuTitle:'',
+        menuTitle: '',
         fullHeight: document.documentElement.clientHeight,
         menuList: [{
             name: "无限级目录树",
@@ -32,6 +32,10 @@
           {
             name: "翻页组件",
             path: "/vuePagination"
+          },
+          {
+            name: "图片上传",
+            path: "/imageUploader"
           },
         ]
       }
@@ -87,7 +91,11 @@
 </script>
 
 <style>
-  body,ul,li,div,p{
+  body,
+  ul,
+  li,
+  div,
+  p {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -95,6 +103,7 @@
     -webkit-user-select: none;
     outline: none;
   }
+
   .index-box {
     width: 100%;
     overflow: hidden;
@@ -120,7 +129,8 @@
     width: 82%;
     overflow-y: auto;
   }
-  .index-right-content-title{
+
+  .index-right-content-title {
     text-align: center;
     font-weight: bold;
     width: 100%;
