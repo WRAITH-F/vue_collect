@@ -37,6 +37,10 @@
             name: "图片上传",
             path: "/imageUploader"
           },
+          {
+            name: "组织架构树",
+            path: "/orgTree"
+          }
         ]
       }
     },

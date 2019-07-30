@@ -4,6 +4,7 @@ import directorTree from '@/pages/directorTree'
 import calendarSelect from '@/pages/calendarSelect'
 import vuePagination from '@/pages/vuePagination'
 import imageUploader from '@/pages/imageUploader'
+import orgTree from '@/pages/orgTree'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/imageUploader',
       name: 'imageUploader',
       component: imageUploader
+    },
+    {
+      path: '/orgTree',
+      name: 'orgTree',
+      component: orgTree
     }
   ]
 })
