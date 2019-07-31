@@ -40,6 +40,14 @@
           {
             name: "组织架构树",
             path: "/orgTree"
+          },
+          {
+            name: "导入导出excel",
+            path: "/downExcel"
+          },
+          {
+            name: "弹出窗口",
+            path: "/wraithToast"
           }
         ]
       }

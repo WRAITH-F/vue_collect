@@ -5,6 +5,8 @@ import calendarSelect from '@/pages/calendarSelect'
 import vuePagination from '@/pages/vuePagination'
 import imageUploader from '@/pages/imageUploader'
 import orgTree from '@/pages/orgTree'
+import downExcel from '@/pages/downExcel'
+import wraithToast from '@/pages/wraithToast'
 
 Vue.use(Router)
 
@@ -41,6 +43,16 @@ export default new Router({
       path: '/orgTree',
       name: 'orgTree',
       component: orgTree
+    },
+    {
+      path: '/downExcel',
+      name: 'downExcel',
+      component: downExcel
+    },
+    {
+      path: '/wraithToast',
+      name: 'wraithToast',
+      component: wraithToast
     }
   ]
 })
