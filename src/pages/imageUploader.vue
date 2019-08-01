@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="image-uploader">
     <image-uploader
       :preview="true"
       :className="['fileinput', { 'fileinput--loaded': hasImage }]"
@@ -26,15 +26,11 @@
 </template>
 
 <script>
-// import ImageUploader from './components/ImageUploader.vue'
 
 export default {
   name: 'app',
-  components: {
-    // ImageUploader,
-  },
   data() {
-    return { hasImage: true }
+    return { hasImage: false }
   },
   methods: {
     setImage: function(output) {
@@ -47,10 +43,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#image-uploader {
+  margin: 32px 0;
   text-align: center;
   color: #2c3e50;
 }

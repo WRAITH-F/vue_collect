@@ -34,8 +34,12 @@
             path: "/vuePagination"
           },
           {
-            name: "图片上传",
+            name: "图片上传（单张）",
             path: "/imageUploader"
+          },
+           {
+            name: "图片上传（多张）",
+            path: "/imgUpload"
           },
           {
             name: "组织架构树",
@@ -48,6 +52,11 @@
           {
             name: "弹出窗口",
             path: "/wraithToast"
+          },
+
+          {
+            name: "测试",
+            path: "/test"
           }
         ]
       }

@@ -9,6 +9,7 @@ import calendar from './components/calendar/index.js'
 import pagination from './components/vuePagination/index.js'
 import ImageUploaderPlugin from './components/ImageUploader/index.js'
 import OrgTree from './components/orgTree/index.js'
+import ImageUploader from './components/imgUploader/index.js'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
@@ -18,6 +19,7 @@ Vue.use(calendar)
 Vue.use(pagination)
 Vue.use(ImageUploaderPlugin)
 Vue.use(OrgTree)
+Vue.use(ImageUploader)
 
 
 /* eslint-disable no-new */
