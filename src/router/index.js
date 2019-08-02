@@ -8,7 +8,7 @@ import imgUpload from '@/pages/imgUpload'
 import orgTree from '@/pages/orgTree'
 import downExcel from '@/pages/downExcel'
 import wraithToast from '@/pages/wraithToast'
-import test from '@/pages/test'
+import cascadingAddress from '@/pages/cascadingAddress'
 
 Vue.use(Router)
 
@@ -62,9 +62,9 @@ export default new Router({
       component: wraithToast
     },
     {
-      path: '/test',
-      name: 'test',
-      component: test
+      path: '/cascadingAddress',
+      name: 'cascadingAddress',
+      component: cascadingAddress
     }
   ]
 })

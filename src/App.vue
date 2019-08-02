@@ -55,8 +55,8 @@
           },
 
           {
-            name: "测试",
-            path: "/test"
+            name: "vue城市级联选择",
+            path: "/cascadingAddress"
           }
         ]
       }

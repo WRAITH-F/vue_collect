@@ -10,6 +10,7 @@ import pagination from './components/vuePagination/index.js'
 import ImageUploaderPlugin from './components/ImageUploader/index.js'
 import OrgTree from './components/orgTree/index.js'
 import ImageUploader from './components/imgUploader/index.js'
+import cascadingAddress from './components/cascadingAddress/index.js'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
@@ -20,6 +21,7 @@ Vue.use(pagination)
 Vue.use(ImageUploaderPlugin)
 Vue.use(OrgTree)
 Vue.use(ImageUploader)
+Vue.use(cascadingAddress)
 
 
 /* eslint-disable no-new */
