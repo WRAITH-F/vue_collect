@@ -11,6 +11,9 @@ import ImageUploaderPlugin from './components/ImageUploader/index.js'
 import OrgTree from './components/orgTree/index.js'
 import ImageUploader from './components/imgUploader/index.js'
 import cascadingAddress from './components/cascadingAddress/index.js'
+import VueDragTree from './components/dragTree/index.js'
+import myDirectoryTree from './components/myDirectoryTree/index.js'
+
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
@@ -22,6 +25,8 @@ Vue.use(ImageUploaderPlugin)
 Vue.use(OrgTree)
 Vue.use(ImageUploader)
 Vue.use(cascadingAddress)
+Vue.use(VueDragTree)
+Vue.use(myDirectoryTree)
 
 
 /* eslint-disable no-new */

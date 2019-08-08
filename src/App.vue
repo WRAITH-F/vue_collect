@@ -57,6 +57,11 @@
           {
             name: "vue城市级联选择",
             path: "/cascadingAddress"
+          },
+
+          {
+            name: "自制目录树组件",
+            path: "/myDirectoryTree"
           }
         ]
       }

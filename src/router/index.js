@@ -9,6 +9,7 @@ import orgTree from '@/pages/orgTree'
 import downExcel from '@/pages/downExcel'
 import wraithToast from '@/pages/wraithToast'
 import cascadingAddress from '@/pages/cascadingAddress'
+import myDirectoryTree from '@/pages/myDirectoryTree'
 
 Vue.use(Router)
 
@@ -65,6 +66,11 @@ export default new Router({
       path: '/cascadingAddress',
       name: 'cascadingAddress',
       component: cascadingAddress
+    },
+    {
+      path: '/myDirectoryTree',
+      name: 'myDirectoryTree',
+      component: myDirectoryTree
     }
   ]
 })
