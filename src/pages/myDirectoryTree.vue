@@ -1,6 +1,6 @@
 <template>
   <div class="my-directory-tree-use">
-    <my-directory-tree :treeData="treeData"></my-directory-tree>
+    <my-directory-tree :treeData="treeData" @handle="handle"></my-directory-tree>
   </div>
 </template>
 
@@ -92,6 +92,11 @@
             }]
           }]
         }]
+      }
+    },
+    methods: {
+      handle(val) {
+        // console.log(val)
       }
     },
   }
