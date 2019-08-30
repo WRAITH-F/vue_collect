@@ -1,6 +1,8 @@
 <template>
     <div class="my-Select">
-      <vue-select-picker :item-click="dropDownClick" :isNeedSearch="true" :itemlist="itemlist"></vue-select-picker>
+      <div style="width: 200px;height: 40px;">
+         <vue-select-picker @item-click="dropDownClick" :isNeedSearch="true" :itemlist="itemlist"></vue-select-picker>
+      </div>
     </div>
 </template>
 

@@ -102,13 +102,16 @@
     border-top: 6px solid transparent;
   }
   .vue-dropdown.default-theme {
-    width: 200px;
+    width: 100%;
     z-index: 10;
     border-radius: 3px;
     border: 1px solid #ccc;
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .vue-dropdown.default-theme._self-show {
     display: block!important;
