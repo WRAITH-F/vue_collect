@@ -5,7 +5,7 @@
   "author": "MARITH-M <1213422461@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 10.168.1.165",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 10.168.1.155",
     "start": "npm run dev",
     "build": "node build/build.js"
   },

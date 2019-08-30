@@ -10,6 +10,7 @@ import downExcel from '@/pages/downExcel'
 import wraithToast from '@/pages/wraithToast'
 import cascadingAddress from '@/pages/cascadingAddress'
 import myDirectoryTree from '@/pages/myDirectoryTree'
+import selectPicker from '@/pages/selectPicker'
 
 Vue.use(Router)
 
@@ -71,6 +72,11 @@ export default new Router({
       path: '/myDirectoryTree',
       name: 'myDirectoryTree',
       component: myDirectoryTree
+    },
+    {
+      path: '/selectPicker',
+      name: 'selectPicker',
+      component: selectPicker
     }
   ]
 })

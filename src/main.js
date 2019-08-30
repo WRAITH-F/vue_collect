@@ -13,6 +13,7 @@ import ImageUploader from './components/imgUploader/index.js'
 import cascadingAddress from './components/cascadingAddress/index.js'
 import VueDragTree from './components/dragTree/index.js'
 import myDirectoryTree from './components/myDirectoryTree/index.js'
+import VueSelectPicker from './components/selectPicker/index.js'
 
 
 Vue.prototype.$http = axios
@@ -27,7 +28,7 @@ Vue.use(ImageUploader)
 Vue.use(cascadingAddress)
 Vue.use(VueDragTree)
 Vue.use(myDirectoryTree)
-
+Vue.use(VueSelectPicker)
 
 /* eslint-disable no-new */
 new Vue({

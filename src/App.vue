@@ -62,6 +62,11 @@
           {
             name: "自制目录树组件",
             path: "/myDirectoryTree"
+          },
+
+          {
+            name: "自制下拉框组件",
+            path: "/selectPicker"
           }
         ]
       }
