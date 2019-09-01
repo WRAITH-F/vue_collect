@@ -80,8 +80,10 @@ export default {
     pageSize: Number, //每页最大显示条数
     maxPage: Number, //分页导航
     pageSelect: {
-      type: Number,
-      default: [10, 20, 50, 100]
+      type: Array,
+      default: function () {
+        return [10, 20, 50, 100];
+      }
     } //每页最大显示条数选择
     // isJumpPage:Boolean,
   },
