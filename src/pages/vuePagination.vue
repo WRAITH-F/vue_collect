@@ -3,6 +3,9 @@
     <div class="pagination-compnents">
       <vue-pagination :prevHtml="prevHtml" :nextHtml="nextHtml" :pageNum="pageNum" :page-size="pageSize" :total="total"
         :max-page="maxPage" @pagehandler="pageHandler" @pageSizeSelect="pageSizeSelect" :isShowPageSelect="isShowPageSelect" :isJumpPage="isJumpPage"></vue-pagination>
+
+      <vue-my-pagination :prevHtml="prevHtml" :nextHtml="nextHtml" :pageNum="pageNum" :page-size="pageSize" :total="total" :pageSelect = "pageSelect" :firstHtml = "firstHtml" :lastHtml ="lastHtml"
+                      :max-page="maxPage" @pagehandler="pageHandler" @pageSizeSelect="pageSizeSelect" :isShowPageSelect="isShowPageSelect" :isJumpPage="isJumpPage"></vue-my-pagination>
     </div>
   </div>
 </template>
@@ -12,14 +15,17 @@
     data() {
       return {
         //分页
-        prevHtml: "上一页", //不定义为 <
-        nextHtml: "下一页", //不定义为 >
+        prevHtml: "<", //不定义为 <
+        nextHtml: ">", //不定义为 >
+        firstHtml: "|<", //不定义为 <
+        lastHtml: ">|", //不定义为 >
         pageNum: 1, //默认页 第一页
         pageSize: 10, //每页显示最大条数
-        total: 1000, //一共多少条数据
+        total: 100, //一共多少条数据
         maxPage: 5 ,//分页导航
         isShowPageSelect:true,
         isJumpPage:true,
+        pageSelect:[1,10,20,30,40,50,100]
       }
     },
     methods: {

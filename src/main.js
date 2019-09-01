@@ -7,6 +7,7 @@ import axios from 'axios'
 import VueTree from './components/directorTree/index.js'
 import calendar from './components/calendar/index.js'
 import pagination from './components/vuePagination/index.js'
+import MyPagination from './components/MyPagination/index.js'
 import ImageUploaderPlugin from './components/ImageUploader/index.js'
 import OrgTree from './components/orgTree/index.js'
 import ImageUploader from './components/imgUploader/index.js'
@@ -22,6 +23,7 @@ Vue.config.productionTip = false
 Vue.use(VueTree)
 Vue.use(calendar)
 Vue.use(pagination)
+Vue.use(MyPagination)
 Vue.use(ImageUploaderPlugin)
 Vue.use(OrgTree)
 Vue.use(ImageUploader)
